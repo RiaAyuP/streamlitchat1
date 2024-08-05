@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv, find_dotenv
-from ollama import chat
+import ollama
 import streamlit as st
 
 st.title("💬 Dita's Ollama Chatbot")
@@ -18,7 +18,7 @@ if prompt := st.chat_input():
     
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
-    response = ollama.chat(model="llama-3.1", messages=st.session_state.messages)
+    response = ollama.chat(model="llama3.1", messages=st.session_state.messages)
     
     msg = response['message']['content']
     st.session_state.messages.append({"role": "assistant", "content": msg})
