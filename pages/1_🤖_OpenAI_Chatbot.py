@@ -11,7 +11,7 @@ st.title("💬 Dita's OpenAI Chatbot")
 st.caption("🚀 A Streamlit chatbot powered by OpenAI")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "system", "content": "You are a helpful assistant who only speaks in Indonesian."},
+        {"role": "system", "content": "You are a helpful assistant."},
         {"role": "assistant", "content": "How can I help you?"}
         ]
 

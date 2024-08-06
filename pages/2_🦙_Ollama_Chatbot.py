@@ -5,11 +5,11 @@ import streamlit as st
 
 st.title("💬 Dita's Ollama Chatbot")
 st.caption("🚀 A Streamlit chatbot powered by Ollama")
-model = st.selectbox("Please select LLM",("gemma2", "llama3.1", "mistral"),)
+model = st.selectbox("Please select LLM",("gemma2", "llama3.1", "mistral"))
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "system", "content": "You are a helpful assistant who only speaks in Indonesian."},
+        {"role": "system", "content": "You are a helpful assistant."},
         {"role": "assistant", "content": "How can I help you?"}
         ]
 
