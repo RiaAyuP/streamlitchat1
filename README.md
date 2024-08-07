@@ -1,6 +1,6 @@
 # Chat with LLMs with Streamlit
 
-Please update `system` prompt **in the code** for better experience. Easier UI for `system` prompt is upcoming.
+Please update `System Message` prompt for better experience.
 1. GPT-4o Mini Chatbot `1_🤖_OpenAI_Chatbot.py`
 2. Open-Source LLM Chatbot using Ollama `2_🦙_Ollama_Chatbot.py` (LLM: Gemma 2 9B, Llama 3.1 8B, Mistral 7B) **local**
 
