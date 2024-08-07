@@ -20,7 +20,7 @@ https://github.com/RiaAyuP/streamlitchat1
 conda create -p env python=3.10 -y
 ```
 ```bash
-conda activate env
+conda activate ./env
 ```
 
 ### Install the requirements
